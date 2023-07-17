@@ -4,8 +4,8 @@ from io import BytesIO
 from mimetypes import MimeTypes
 from typing import Dict, List, Optional, Union
 
+from litestar.datastructures import UploadFile, Headers
 from pydantic import BaseModel, EmailStr, root_validator, validator
-from starlette.datastructures import Headers, UploadFile
 
 from fastapi_mail.errors import WrongFile
 
@@ -71,9 +71,8 @@ class MessageSchema(BaseModel):
                         headers = None
                         if content_type:
                             headers = Headers({"content-type": content_type})
-                        file_content = BytesIO(f.read())
-                        u = UploadFile(
-                            filename=file_name, file=file_content, headers=headers
+                        file_content = f.read()
+                        u = UploadFile(content_type=content_type, filename=file_name, file_data=file_content, headers=headers
                         )
                         temp.append((u, file_meta))
                 else:
