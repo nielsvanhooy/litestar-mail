@@ -21,13 +21,12 @@ classifiers = [
 python = ">=3.8.1,<4.0"  # flake wants 3.8.1 minimum for some reason
 Jinja2 = "^3.0"
 aiosmtplib = "^2.0"
-pydantic = "^2.0"
+pydantic = {version = "^2.0", extras = ["email"]}
 pydantic_settings = "^2.0"
-email-validator = "^2.0"
 blinker = "^1.5"
 httpx = {extras = ["httpx"], version = "^0.23", optional = true}
 redis = {extras = ["redis"], version = "^4.3", optional = true}
-litestar = "^2.0.0b2"
+litestar = {git = "https://github.com/litestar-org/litestar.git", branch = "main", allow-prereleases = true}
 
 [tool.poetry.extras]
 httpx = ["httpx"]
