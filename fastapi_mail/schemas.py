@@ -1,6 +1,5 @@
 import os
 from enum import Enum
-from io import BytesIO
 from mimetypes import MimeTypes
 from typing import Dict, List, Optional, Union
 
