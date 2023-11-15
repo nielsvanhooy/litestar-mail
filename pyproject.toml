@@ -26,7 +26,7 @@ pydantic_settings = "^2.0"
 blinker = "^1.5"
 httpx = {extras = ["httpx"], version = "^0.23", optional = true}
 redis = {extras = ["redis"], version = "^4.3", optional = true}
-litestar = {git = "https://github.com/litestar-org/litestar.git", branch = "main", allow-prereleases = true}
+litestar = "^2.3.2"
 
 [tool.poetry.extras]
 httpx = ["httpx"]
