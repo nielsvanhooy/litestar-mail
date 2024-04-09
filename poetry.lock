@@ -2,18 +2,18 @@
 
 [[package]]
 name = "aiosmtplib"
-version = "2.0.2"
+version = "3.0.1"
 description = "asyncio SMTP client"
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = ">=3.8,<4.0"
 files = [
-    {file = "aiosmtplib-2.0.2-py3-none-any.whl", hash = "sha256:1e631a7a3936d3e11c6a144fb8ffd94bb4a99b714f2cb433e825d88b698e37bc"},
-    {file = "aiosmtplib-2.0.2.tar.gz", hash = "sha256:138599a3227605d29a9081b646415e9e793796ca05322a78f69179f0135016a3"},
+    {file = "aiosmtplib-3.0.1-py3-none-any.whl", hash = "sha256:abcceae7e820577307b4cda2041b2c25e5121469c0e186764ddf8e15b12064cd"},
+    {file = "aiosmtplib-3.0.1.tar.gz", hash = "sha256:43580604b152152a221598be3037f0ae6359c2817187ac4433bd857bc3fc6513"},
 ]
 
 [package.extras]
-docs = ["sphinx (>=5.3.0,<6.0.0)", "sphinx_autodoc_typehints (>=1.7.0,<2.0.0)"]
-uvloop = ["uvloop (>=0.14,<0.15)", "uvloop (>=0.14,<0.15)", "uvloop (>=0.17,<0.18)"]
+docs = ["furo (>=2023.9.10,<2024.0.0)", "sphinx (>=7.0.0,<8.0.0)", "sphinx-copybutton (>=0.5.0,<0.6.0)", "sphinx_autodoc_typehints (>=1.24.0,<2.0.0)"]
+uvloop = ["uvloop (>=0.18,<0.19)"]
 
 [[package]]
 name = "annotated-types"
@@ -1888,4 +1888,4 @@ redis = ["redis"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8.1,<4.0"
-content-hash = "6340793f233e617d663181c7a659b8ab9264ac7e743d19cf0b9d6d3af0990bad"
+content-hash = "c88c85f7aebd73bc5c395cd1ee358cf011b491f8bb7735314ff3b44b34b8aebc"
